@@ -11,5 +11,8 @@
   },
   "cacheDirectories": [
     "frontend/node_modules"
-  ]
+  ],
+  "engines": {
+    "node": "12.6.0",
+  },
 }
