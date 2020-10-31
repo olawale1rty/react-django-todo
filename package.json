@@ -7,12 +7,13 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "heroku-prebuild": "NODE_ENV=production cd frontend/ && yarn install && yarn build && cd .."
+    "heroku-prebuild": "NODE_ENV=production cd frontend/ && npm install && npm build && cd .."
   },
   "cacheDirectories": [
     "frontend/node_modules"
   ],
   "engines": {
-    "node": "12.6.0"
+    "node": "12.6.0",
+    "npm": "6.9.0"
   }
 }
