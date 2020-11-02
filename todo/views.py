@@ -15,7 +15,7 @@ class TodoView(viewsets.ModelViewSet):
 
 class FrontendAppView(View):
     """
-    Serves the compiled frontend entry point (only works if you have run `yarn
+    Serves the compiled frontend entry point (only works if you have run `npm
     build`).
     """
     index_file_path = os.path.join(settings.REACT_APP_DIR, 'build', 'index.html')
@@ -30,7 +30,7 @@ class FrontendAppView(View):
                 """
                 This URL is only used when you have built the production
                 version of the app. Visit http://localhost:3000/ instead after
-                running `yarn start` on the frontend/ directory
+                running `npm start` on the frontend/ directory
                 """,
                 status=501,
             )          
